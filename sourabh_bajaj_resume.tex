@@ -1,10 +1,11 @@
 %-------------------------
 % Resume in Latex
 % Author : Sourabh Bajaj
+% Modified by: Ryan P Smith
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -24,9 +25,9 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+%\addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
@@ -74,8 +75,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-  \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+  \textbf{\href{http://mysite.com/}{\Large Ryan P Smith}} & Email : \href{mailto:ryan.smith.p@gmail.com}{ryan.smith.p@gmail.com}\\
+  \href{http://www.linkedin.com/in/rpseq}{http://www.linkedin.com/in/rpseq} & Mobile : +1-319-899-0190 \\
 \end{tabular*}
 
 
@@ -83,11 +84,11 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science;  GPA: 4.00}{Aug. 2012 -- Dec. 2013}
+      {Washington University}{St Louis, MO}
+      {PhD, Molecular Genetics and Genomics}{Aug. 2014 -- Present}
     \resumeSubheading
-      {Birla Institute of Technology and Science}{Pilani, India}
-      {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.66 (9.15/10.0)}{Aug. 2008 -- July. 2012}
+      {University of Iowa}{Iowa City, IA}
+      {BS, Microbiology and Informatics;  GPA: 3.8}{Aug. 2009 -- May. 2014}
   \resumeSubHeadingListEnd
 
 
@@ -96,85 +97,46 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 - Present}
+      {The McDonnell Genome Institute, Washington University}{St Louis, MO}
+      {Graduate Research Scientist, Ira Hall Lab, Computational Genetics}{Feb 2015 - Present}
       \resumeItemListStart
-        \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+        \resumeItem{Distributed Computing}
+          {Leverage a high-performance distributed computing cluster to process population-scale genome
+           sequencing data, improving our understanding of the causes and consequences of structural
+           variation in human genomes. (~10,000 CPU cores across ~550 nodes. ~1TB RAM in total.)}
+        \resumeItem{Single-cell Sequencing}
+          {Develop novel computational and molecular biology methods to sequence the genomes of single
+           mammalian neurons in collaboration with The Scripps Research Institute at University of
+           California, San Diego. (Often processing up to 10 TB of raw Illumina sequencing data within a
+           ~36 hour period.)}
+        \resumeItem{Teaching Assistant}
+          {Advised students in characterizing the genome sequences of novel bacteriophages. Hands-on computer lab course using a series of bioinformatics tools to identify genes and predict their function as well as classifying phages into existing phylogenetic groups.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Coursera}{Mountain View, CA}
-      {Senior Software Engineer}{Jan 2014 - Oct 2016}
+      {University of Iowa}{Iowa City, IA}
+      {Undergraduate Research Fellow, Adam Dupuy Lab, Cancer Genetics}{Aug 2010 - May 2014}
       \resumeItemListStart
-        \resumeItem{Notifications}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{Workflows}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-        \resumeItem{Data Collection}
-          {Designed the internal survey and crowd sourcing platfowm which allowed for creating various tasks for crowd sourding or embedding surveys across the Coursera platform.}
-        \resumeItem{Dev Environment}
-          {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-        \resumeItem{Data Warehousing}
-          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-        \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursesa, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-        \resumeItem{Content Discovery}
-          {Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-        \resumeItem{Course Dashboards}
-          {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
-      \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
-      \resumeItemListStart
-        \resumeItem{Research Assistant - Machine Learning}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
-        \resumeItem{Teaching Assistant - Computational Investing}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+        \resumeItem{Genome Editing}
+          {Designed methods for viral genetic engineering in mouse models of human cancers and a
+           sequencing method for detecting resulting transgene insertions.}
+        \resumeItem{Bioinformatics}
+          {Processed high-throughput genome sequencing data using Linux bioinformatics tools followed
+           by ad-hoc statistical analyses and data visualization in Python and R.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
-  \resumeSubHeadingListEnd
 
-%
 %--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+        \resumeItem{Languages}
+          {{Bash, Python, R (ggplot), SQL, C++, awk}}
+        \resumeItem{Technologies}
+          {Linux/Unix, OSX, Windows, sed, git, Docker, Distributed Computing (IBM Platform LSF, Oracle Grid Engine)}
+  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
