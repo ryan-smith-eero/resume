@@ -39,7 +39,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 %-------------------------
 % Custom commands
@@ -79,9 +79,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Ryan P Smith}} \\   
-  \href{https://github.com/RPSeq}{github.com/RPSeq} & \href{mailto:ryan.smith.p@gmail.com}{ryan.smith.p@gmail.com}\\
-  \href{http://www.linkedin.com/in/rpseq}{linkedin.com/in/rpseq} & +1-319-899-0190 \\
+  \textbf{{\Large Ryan P Smith}} \\ 
+  \href{http://www.linkedin.com/in/rpseq}{linkedin.com/in/rpseq} & \href{mailto:ryan.smith.p@gmail.com}{ryan.smith.p@gmail.com} \\
+  \href{https://github.com/RPSeq}{github.com/rpseq} & +1-319-899-0190 \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -94,9 +94,16 @@
       
     \resumeSubheading
       {University of Iowa}{Iowa City, IA}
-      {BS, Microbiology and Informatics;  GPA: 3.8}{Aug. 2009 -- May. 2014}
+      {BS, Microbiology and Informatics;  GPA: 3.7}{Aug. 2009 -- May. 2014}
       
-  \resumeSubHeadingListEnd
+      \resumeItemListStart
+      
+        \resumeItem{Relevant Coursework}
+        {Intro to CS, Programming for Informatics, Biostatistics, Programming with C++, Bioinformatics Techniques, Human Computer Interaction, Database Mgmt, Strategic Mgmt of Technology}
+        
+      \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -109,14 +116,10 @@
       \resumeItemListStart
       
         \resumeItem{Distributed Computing, Bioinformatics}
-          {Leveraging a high-performance distributed computing cluster to process population-scale genome
-           sequencing data, improving our understanding of the causes and consequences of structural
-           variation in human genomes. Most work is done in a Linux environment with custom Bash pipelines, often using bioinformatics tools combining Bayesian statistics and machine learning approaches.}
+          {Processing population-level genome sequencing data to improve our understanding of the causes and consequences of structural variation in human genomes. Most work is done in a Linux environment with custom Bash pipelines, distributed across a Dockerized computing cluster. Analyses often use bioinformatics tools combining Bayesian statistics and machine learning approaches.}
        
         \resumeItem{Single-cell Sequencing}
-          {Developing novel computational and molecular biology methods to sequence the genomes of single
-           mammalian neurons in collaboration with The Scripps Research Institute at University of
-           California, San Diego. (Processing up to 10 TB of raw Illumina sequencing data within a 36 hour period.)}
+          {Developing novel computational and molecular biology methods to sequence the genomes of single mammalian neurons in collaboration with The Scripps Research Institute at University of California, San Diego. Typically processing up to 10 TB of raw Illumina sequencing data within a 36 hour period.}
        
         \resumeItem{Teaching Assistant}
           {Advised students in characterizing the genome sequences of novel bacteriophages. Hands-on computer lab course using a series of bioinformatics tools to identify genes and predict their function, as well as classifying unknown phages into existing phylogenetic groups.}
@@ -130,12 +133,10 @@
       \resumeItemListStart
       
         \resumeItem{Genome Editing}
-          {Designed methods for viral genetic engineering in mouse models of human cancers and a
-           sequencing method for detecting resulting transgene insertions.}
+          {Designed methods for viral genetic engineering in mouse models of human cancers and a sequencing method for detecting resulting transgene insertions.}
        
         \resumeItem{Bioinformatics}
-          {Processed high-throughput genome sequencing data using Linux bioinformatics tools followed
-           by ad-hoc statistical analyses and data visualization in Python and R.}
+          {Processed high-throughput genome sequencing data using Linux bioinformatics tools followed by ad-hoc statistical analyses and data visualization in Python and R.}
        
       \resumeItemListEnd
       
@@ -144,17 +145,17 @@
 %--------INTERESTS------------
 \section{Relevant Interests}
 
-{Data science, distributed computing, data visualization, bioinformatics, genetics. I enjoy learning new technologies and tinkering with complex systems. After several years of genetics and bioinformatics training in academia, I am currently seeking industry experience with specific interests in data science and software engineering.}
+{Data science, distributed computing, object-oriented and functional programming, data visualization, bioinformatics, genetics, virtualization. I enjoy learning and developing new technologies as well as tinkering with complex systems. After 7 years of genetics and bioinformatics training in an academic setting, I am seeking industry experience with specific interests in data science and software engineering.}
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
   \resumeSubHeadingListStart
   
         \resumeItem{Languages}
-          {Bash, Python, R (ggplot), awk, SQL, C++, JavaScript, HTML, PHP, \LaTeX}
+          {Bash, Python, R (ggplot), awk, SQL, C++, JavaScript, HTML, PHP, \LaTeX, Mathematica}
           
         \resumeItem{Technologies}
-          {Linux/Unix, OSX, sed, git, Docker, high-performance distributed computing (IBM Platform LSF, Oracle Grid Engine)}
+          {Linux/Unix, OSX, sed, git, Docker, distributed computing (IBM Platform LSF, Oracle Grid Engine)}
           
   \resumeSubHeadingListEnd
 
