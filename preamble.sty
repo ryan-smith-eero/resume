@@ -6,6 +6,7 @@
 %------------------------
 
 \ProvidesPackage{preamble}
+
 \documentclass[letterpaper,hidelinks,11pt]{article}
 
 \usepackage{latexsym}
@@ -45,23 +46,23 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+	\item\small{
+		\textbf{#1}{: #2 \vspace{-2pt}}
+	}
 }
 
 \newcommand{\publicationItem}[2]{
-  \item\small{
-    \textbf{#1}{#2 \vspace{-2pt}}
-  }
+	\item\small{
+    	\textbf{#1}{#2 \vspace{-2pt}}
+	}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+	\vspace{-1pt}\item
+		\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      		\textbf{#1} & #2 \\
+      		\textit{\small#3} & \textit{\small #4} \\
+    	\end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
