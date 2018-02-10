@@ -5,11 +5,11 @@ jobs:
             - image: rpseq/docker-latex
         steps:
             - checkout
-            # - run:
-                # name: gitConfig
-                # command: |
-                    # git config --global user.email "ryan.smith.p@gmail.com"
-                    # git config --global user.name "RPSeq"
+            - run:
+                name: gitConfig
+                command: |
+                    git config --global user.email "ryan.smith.p@gmail.com"
+                    git config --global user.name "RPSeq"
             - run:
                 name: clean
                 command: rm ryan_p_smith_resume.pdf
