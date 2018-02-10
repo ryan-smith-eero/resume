@@ -1,13 +1,16 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: debian:stretch
-    steps:
-      - checkout
-      - run:
-          name: Greeting
-          command: echo Hello, world.
-      - run:
-          name: Print the Current Time
-          command: date
+    build:
+        docker:
+            - image: rpseq/docker-latex
+        steps:
+            - checkout
+            - add_ssh_keys:
+                fingerprints:
+                - "24:02:de:01:4f:95:4d:36:c8:61:06:81:91:9c:d7:22"
+            - run:
+                name: makePDF
+                command: latexmk -pdf ryan_p_smith.tex
+            - run:
+                name: push
+                command: git add ryan_p_smith.pdf && git commit -m "Auto-build [ci skip]" && git push
