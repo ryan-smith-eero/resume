@@ -14,8 +14,11 @@ jobs:
                 name: clean
                 command: rm ryan_p_smith_resume.pdf
             - run:
-                name: make
+                name: makePDF
                 command: latexmk -pdf ryan_p_smith_resume.tex
+            - run:
+                name: makePNG
+                command: convert -density 300 ryan_p_smith_resume.pdf -quality 90 ryan_p_smith_resume.png
             - run:
                 name: push
                 command: |
