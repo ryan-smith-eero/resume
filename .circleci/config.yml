@@ -2,7 +2,7 @@ version: 2
 jobs:
     build:
         docker:
-            - image: tianon/latex
+            - image: rpseq/docker-latex
         steps:
             - checkout
             - run:
