@@ -12,7 +12,9 @@ jobs:
                     git config --global user.name "RPSeq"
             - run:
                 name: clean
-                command: rm ryan_p_smith_resume.pdf
+                command: |
+                    rm ryan_p_smith_resume.pdf
+                    ryan_p_smith_resume.png
             - run:
                 name: makePDF
                 command: latexmk -pdf ryan_p_smith_resume.tex
