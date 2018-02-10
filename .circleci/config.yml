@@ -9,6 +9,10 @@ jobs:
                 fingerprints:
                 - "24:02:de:01:4f:95:4d:36:c8:61:06:81:91:9c:d7:22"
             - run:
+                name: gitConfig
+                command: git config --global user.email "ryan.smith.p@gmail.com" && \
+                         git config --global user.name "RPSeq"
+            - run:
                 name: clean
                 command: rm ryan_p_smith_resume.pdf
             - run:
@@ -16,4 +20,6 @@ jobs:
                 command: latexmk -pdf ryan_p_smith_resume.tex
             - run:
                 name: push
-                command: git add ryan_p_smith_resume.pdf && git commit -m "Auto-build [ci skip]" && git push
+                command: git add ryan_p_smith_resume.pdf && \
+                         git commit -m "Auto-build [ci skip]" \
+                         && git push
