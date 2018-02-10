@@ -20,5 +20,5 @@ jobs:
                 name: push
                 command: |
                     git add ryan_p_smith_resume.pdf
-                    git commit -m "Auto-build [ci skip]"
+                    git commit -m "Auto-build $CIRCLE_BUILD_NUM [ci skip]"
                     git push
