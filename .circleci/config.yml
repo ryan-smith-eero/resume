@@ -7,7 +7,9 @@ jobs:
             - checkout
             - run:
                 name: gitConfig
-                command: git config --global user.email "ryan.smith.p@gmail.com" && git config --global user.name "RPSeq"
+                command: |
+                    git config --global user.email "ryan.smith.p@gmail.com"
+                    git config --global user.name "RPSeq"
             - run:
                 name: clean
                 command: rm ryan_p_smith_resume.pdf
@@ -16,4 +18,7 @@ jobs:
                 command: latexmk -pdf ryan_p_smith_resume.tex
             - run:
                 name: push
-                command: git add ryan_p_smith_resume.pdf && git commit -m "Auto-build [ci skip]" && git push
+                command: |
+                    git add ryan_p_smith_resume.pdf
+                    git commit -m "Auto-build [ci skip]"
+                    git push
