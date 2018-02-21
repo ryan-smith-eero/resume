@@ -25,4 +25,4 @@ jobs:
                 name: push
                 command: |
                     git commit -am "Auto-build $CIRCLE_BUILD_NUM [ci skip]"
-                    git push
+                    git push --set-upstream origin devops
